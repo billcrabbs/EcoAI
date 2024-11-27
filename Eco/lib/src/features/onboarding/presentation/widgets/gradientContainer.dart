@@ -9,13 +9,13 @@ class GradientContainer extends StatelessWidget {
   final PageController pageController;
 
   const GradientContainer({
-    Key? key,
+    super.key,
     required this.heading,
     required this.paragraph,
     required this.buttonText,
     required this.onNext,
     required this.pageController,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

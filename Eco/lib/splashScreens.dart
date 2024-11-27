@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:onboardingscreens/src/features/onboarding/presentation/pages/HomPage.dart';
+import 'package:onboardingscreens/src/features/onboarding/presentation/pages/Onboard.dart';
 
 class Splashscreens extends StatefulWidget {
-  const Splashscreens({Key? key}) : super(key: key);
+  const Splashscreens({super.key});
 
   @override
   State<Splashscreens> createState() => _SplashscreensState();

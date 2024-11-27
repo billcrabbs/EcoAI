@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:onboardingscreens/src/features/Authentication/Pages/auth.dart';
+import 'package:onboardingscreens/src/features/Authentication/Presentation/Pages/welcome/Welcome.dart';
+// import '../../../Authentication/Presentation/Pages/auth.dart';
 import '../widgets/gradientContainer.dart';
 import '../widgets/onboardingSreen1.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
       // Navigate to the Authenticate page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Authenticate()),
+        MaterialPageRoute(builder: (context) => const Welcome()),
       );
     }
   }

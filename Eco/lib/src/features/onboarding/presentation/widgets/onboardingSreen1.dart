@@ -9,13 +9,13 @@ class PageContent extends StatelessWidget {
   final double width;
 
   const PageContent({
-    Key? key,
+    super.key,
     required this.imagePath,
     this.hei = -2.0,
     this.height = 240,
     this.width = 240,
     required this.content,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
